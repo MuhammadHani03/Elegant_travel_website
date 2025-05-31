@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FAQ Page</title>
+    <style>
+      /* Add styles for the page */
+
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      @font-face {
+        font-family: Hey August;
+        src: url(./fonts/Hey\ August.ttf);
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      header {
+        width: 100vw;
+        height: auto;
+      }
+      #hero-section {
+        background-image: url(../img/pexels-asad-photo-maldives-3601425.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: bottom;
+        width: 100vw;
+        height: 500px;
+        padding: 10px;
+        overflow: hidden;
+      }
+
+      .hero-content {
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        height: fit-content;
+      }
+
+      .hero-content p {
+        font-size: 100px;
+        color: rgb(252, 219, 110);
+        font-family: Hey August;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+      #nav-bar {
+        display: flex;
+        width: 100vw;
+        height: 75px;
+        background-color: #439a97;
+        border-bottom: 5px solid #62b6b7;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+        position: relative;
+        z-index: 0;
+      }
+
+      #nav-logo {
+        width: fit-content;
+        height: fit-content;
+        margin-left: 50px;
+      }
+      #nav-logo p,
+      #nav-logo span {
+        font-family: Hey August;
+        font-size: 3rem;
+      }
+      #nav-logo p {
+        color: white;
+      }
+      #nav-logo span {
+        color: rgb(252, 219, 110);
+      }
+
+      #nav-menu ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      #nav-menu ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        font-size: 1.5rem;
+      }
+
+      #nav-menu ul li a:hover {
+        border-bottom: 3px solid #62b6b7;
+        transition-delay: 0.2s;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+        color:rgb(252, 219, 110)
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .faq {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .question {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .answer {
+        margin-bottom: 20px;
+      }
+
+      .accordion {
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: 3px solid  rgb(252, 219, 110);
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+        transition: 0.4s;
+      }
+
+      .active,
+      .accordion:hover {
+        background-color: #62b6b7;
+        color: white;
+      }
+
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+      }
+      footer {
+  width: 100vw;
+  height: 100px;
+  background-color: #439a97;
+  border-top: 5px solid #62b6b7;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div id="nav-bar">
+        <div id="nav-logo">
+          <p><span>E</span>LEGANT <span>T</span>RAVELS</p>
+        </div>
+        <div id="nav-menu">
+          <nav>
+            <ul>
+              <li><a href="../home.html">Home </a></li>
+              <li><a href="../About/About us.html">About us </a></li>
+              <li><a href="../contact-us/form.html">Contact us</a></li>
+              <li><a href="./faq.html">FAQs</a></li>
+              <li><a href="../login/login.html">Login/Signup</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <h1>Frequently Asked Questions</h1>
+    <div class="container">
+      <div class="faq">
+        <div class="question accordion">Does Elegant travelss have a waitlist for fully booked trips?</div>
+        <div class="answer panel">
+         We don’t have a waitlist – so it’s a case of first in, best dressed! People sometimes cancel at the last minute, so if you have your eye on a particular trip that is sold out, we recommend checking our website again to see if space has become available.
+        </div>
+        <div class="question accordion">I want to cancel my booking, how can I do this?</div>
+        <div class="answer panel">
+          Please get in touch via live chat to cancel. We can only process cancellations when we have received written confirmation from you. You may also be charged a cancellation fee depending on the departure date – please see our Booking Conditions for more information. Or find out more information about cancellations, credits and refunds on our Trip Cancellations page.
+        </div>
+        <div class="question accordion">
+          Why do you take full payment?
+        </div>
+        <div class="answer panel">
+          The reason we request full payment for some trips is because we need to confirm each part of your adventure with our local operators and suppliers as we go (e.g. on-tour transport, activities and accommodation). If your place on the trip is unavailable, we’ll provide you with a full refund.
+        </div>
+        <div class="question accordion">
+          Can I use a voucher for a trip that's currently on sale?
+        </div>
+        <div class="answer panel">
+          You sure can. You can use gift vouchers toward full-price and discounted trips.* Please reach out via phone or live chat to book with a voucher.
+
+*Excluding gift vouchers issued by our Customer Care team which can only be redeemed against full-price trips.</div>
+        <div class="question accordion">
+          Do I need to buy travel insurance?
+        </div>
+        <div class="answer panel">
+          Travel insurance is compulsory on all our trips if you’re travelling internationally. Minimum coverage may differ from trip to trip, so make sure you check the Travel Insurance section in your Essential Trip Information. You will not be permitted to join the group until your leader has sighted your insurance policy number and the insurance company's 24-hour emergency contact number – it’s really important there are no barriers to getting emergency assistance for you.
+        </div>
+
+      </div>
+    </div>
+
+    
+       
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <footer>
+     <div class="ft-cont">  
+        <p>&#169 2023 All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

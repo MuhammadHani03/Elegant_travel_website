@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: Hey August;
+  src: url(../fonts/Hey\ August.ttf);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: auto;
+}
+#nav-bar {
+  display: flex;
+  width: 100vw;
+  height: 75px;
+  background-color: #439a97;
+  border-bottom: 5px solid #62b6b7;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  position: relative;
+  z-index: 0;
+}
+
+#nav-logo {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 50px;
+}
+#nav-logo p,
+#nav-logo span {
+  font-family: Hey August;
+  font-size: 3rem;
+}
+#nav-logo p {
+  color: white;
+}
+#nav-logo span {
+  color: rgb(252, 219, 110);
+}
+
+#nav-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+#nav-menu ul li a:hover {
+  border-bottom: 3px solid #62b6b7;
+  transition-delay: 0.2s;
+}
+
+.form-box {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 800px;
+  height: 400px;
+  margin: 50px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  text-transform: capitalize;
+  color: #62b6b7;
+}
+.form-img {
+  width: 35%;
+  height: 100%;
+  background-image: linear-gradient(
+      to left top,
+      rgb(48, 166, 182, 0.1),
+      rgb(36, 126, 138, 0.1)
+    ),
+    url(../img/travel-img.jpg);
+  background-position: center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+.form-info {
+  width: 65%;
+  height: 100%;
+}
+
+.form-heading,
+.form {
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.form-heading h1 {
+  font-size: 2.2rem;
+}
+
+form textarea {
+  outline: none;
+  margin-top: 5px;
+}
+form input {
+  width: 180px;
+  border: none;
+  background-color: white;
+  text-align: left;
+  padding: 5px;
+  margin-right: 20px;
+  outline: none;
+  margin-top: 5px;
+}
+
+form input::placeholder {
+  color: rgba(128, 128, 128, 0.5);
+  text-transform: uppercase;
+}
+
+form .name-info,
+.contact-info {
+  display: flex;
+  margin-top: 10px;
+}
+
+form #submit {
+  width: 84%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  background-color: #439a97;
+  border: none;
+}
+
+form #submit:hover {
+  background-color: #377e7b;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+footer {
+  width: 100vw;
+  height: 100px;
+  background-color: #439a97;
+  border-top: 5px solid #62b6b7;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-top: 30px;
+}

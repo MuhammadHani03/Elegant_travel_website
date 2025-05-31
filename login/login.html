@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <div id="nav-bar">
+        <div id="nav-logo">
+          <p><span>E</span>LEGANT <span>T</span>RAVELS</p>
+        </div>
+        <div id="nav-menu">
+          <nav>
+            <ul>
+              <li><a href="../home.html">Home </a></li>
+              <li><a href="../About/About us.html">About us </a></li>
+              <li><a href="../contact-us/form.html">Contact us</a></li>
+              <li><a href="../Faqs/faq.html">FAQs</a></li>
+              <li><a href="./login.html">Login/Signup</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="login-div">
+        <div class="icon"><i class="fa-solid fa-user"></i></div>
+        <form action="">
+          <label for="">email</label> <br />
+          <input type="email" name="email" id="eml" /><br />
+          <label for="">password</label> <br />
+          <input type="password" name="password" id="psd" /> <br />
+          <div class="button">
+            <button type="submit">login</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="ft-cont">
+ 
+   
+         <p>&#169 2023 All rights reserved.</p>
+       </div>
+     </footer>
+  </body>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-size: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    @font-face {
+      font-family: Hey August;
+      src: url(./fonts/Hey\ August.ttf);
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    header {
+      width: 100vw;
+      height: auto;
+    }
+    #nav-bar {
+      display: flex;
+      width: 100vw;
+      height: 75px;
+      background-color: #439a97;
+      border-bottom: 5px solid #62b6b7;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+      position: relative;
+      z-index: 0;
+    }
+
+    #nav-logo {
+      width: fit-content;
+      height: fit-content;
+      margin-left: 50px;
+    }
+    #nav-logo p,
+    #nav-logo span {
+      font-family: Hey August;
+      font-size: 3rem;
+    }
+    #nav-logo p {
+      color: white;
+    }
+    #nav-logo span {
+      color: rgb(252, 219, 110);
+    }
+
+    #nav-menu ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    #nav-menu ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      font-size: 1.5rem;
+    }
+
+    #nav-menu ul li a:hover {
+      border-bottom: 3px solid #62b6b7;
+      transition-delay: 0.2s;
+    }
+
+    .login-div {
+      background-color: #62b6b7;
+      width: 400px;
+      padding: 20px;
+      height: auto;
+      text-transform: capitalize;
+      border-radius: 10px;
+      margin: 100px auto 100px auto;
+    }
+
+    .icon {
+      width: fit-content;
+      margin: 10px auto 10px auto;
+    }
+
+    .icon i {
+      font-size: 100px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    form {
+      width: fit-content;
+      margin: 0 auto 0 auto;
+    }
+
+    form label {
+      color: white;
+    }
+
+    form input {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 250px;
+      height: 20px;
+    }
+    .button {
+      width: fit-content;
+      margin: 10px auto 10px auto;
+    }
+
+    .button button {
+      width: 160px;
+      height: 30px;
+      font-weight: bolder;
+      text-transform: capitalize;
+      background-color: rgb(252, 219, 110);
+      border: 3px solid goldenrod;
+      color: white;
+    }
+
+    .button button:hover {
+      background-color: gold;
+      transition: 1s;
+    }
+
+    footer {
+  width: 100vw;
+  height: 100px;
+  background-color: #439a97;
+  border-top: 5px solid #62b6b7;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+  </style>
+</html>

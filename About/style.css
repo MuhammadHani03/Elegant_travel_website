@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+@font-face {
+  font-family: Hey August;
+  src: url(./fonts/Hey\ August.ttf);
+}
+header {
+  width: 100vw;
+  height: auto;
+}
+#nav-bar {
+  display: flex;
+  width: 100vw;
+  height: 75px;
+  background-color: #439a97;
+  border-bottom: 5px solid #62b6b7;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+  position: relative;
+  z-index: 0;
+}
+
+#nav-logo {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 50px;
+}
+#nav-logo p,
+#nav-logo span {
+  font-family: Hey August;
+  font-size: 3rem;
+}
+#nav-logo p {
+  color: white;
+}
+#nav-logo span {
+  color: rgb(252, 219, 110);
+}
+
+#nav-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+#nav-menu ul li a:hover {
+  border-bottom: 3px solid #62b6b7;
+  transition-delay: 0.2s;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+}
+
+.partner-logo {
+  width: 20%;
+  margin: 10px;
+  text-align: center;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav a {
+  color: #00008b;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 15px;
+  font-size: 3em;
+  color: #445566;
+  background-color: white;
+  font-family: Georgia, Times, Serif;
+  border-bottom: 5px solid rgb(252, 219, 110);
+}
+body {
+  min-height: 70vh;
+
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.about-section {
+  background: url(pic-1.jpeg) no-repeat left;
+  background-size: 75%;
+  background-color: #19c5b7;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #e7e95e;
+  padding: 150px;
+}
+
+.inner-container h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 20px;
+  color: #080303;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+}
+.container-second {
+  width: 35%;
+  background-color: #e7e95e;
+  padding: 10px;
+}
+ul {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+footer {
+  width: 100vw;
+  height: 100px;
+  background-color: #439a97;
+  border-top: 5px solid #62b6b7;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-top: 30px;
+}

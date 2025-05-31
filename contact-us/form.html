@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./form.js"></script>
+    <link rel="stylesheet" href="./css/form.css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header>
+      <div id="nav-bar">
+        <div id="nav-logo">
+          <p><span>E</span>LEGANT <span>T</span>RAVELS</p>
+        </div>
+        <div id="nav-menu">
+          <nav>
+            <ul>
+              <li><a href="../home.html">Home </a></li>
+              <li><a href="../About/About us.html">About us </a></li>
+              <li><a href="./form.html">Contact us</a></li>
+              <li><a href="../Faqs/faq.html">FAQs</a></li>
+              <li><a href="../login/login.html">Login/Signup</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="form-box">
+      <div class="form-img"></div>
+      <div class="form-info">
+        <div class="form-heading">
+          <h1>
+            lets find a perfect travel plan <br />
+            for you!
+          </h1>
+        </div>
+        <div class="form">
+          <form name="myform" method="post" onsubmit="validateform()">
+            <div class="name-info">
+              <div>
+                <label for="fname">first name</label><br />
+                <input type="text" name="fname" id="fname" placeholder="John" />
+              </div>
+
+              <div>
+                <label for="lname">last name</label><br />
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Maxwell"
+                />
+              </div>
+            </div>
+
+            <div class="contact-info">
+              <div>
+                <label for="phone-num">phone number</label><br />
+                <input
+                  type="tell"
+                  name="phnum"
+                  id="phnum"
+                  placeholder="+92-XX-XXXXXXX"
+                />
+              </div>
+
+              <div>
+                <label for="email">email address</label><br />
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="me@example.com"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="text">message</label><br />
+              <textarea
+                name="msg"
+                id="msg"
+                cols="60
+              "
+                rows="5"
+                placeholder="your message"
+              ></textarea>
+            </div>
+
+            <div class="button">
+              <input type="submit" name="submit" id="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="ft-cont">
+
+        <p>&#169 2023 All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
